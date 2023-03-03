@@ -1,8 +1,8 @@
 def polindrom(text):
-    for i in range(0, int(len(text)/2)):
-        if text[i] != text[len(text)-1-i]:
-         return False
-    return True
+    if text.isalnum()==True:
+        return text == text[::-1]
+    else:
+       return False
                   
 if polindrom("kajak"):
     print("True")
